@@ -25,7 +25,7 @@ namespace VS2017Demo
 			return value1 - value2;
 		}
 
-		public int Compute(object obj1, object obj2)
+		public int CombineHashCode(object obj1, object obj2)
 		{
 			return obj1.GetHashCode() + obj2.GetHashCode();
 		}

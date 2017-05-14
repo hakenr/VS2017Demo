@@ -28,26 +28,26 @@ namespace VS2017DemoTests
 		}
 
 		[TestMethod]
-		public void Calculator_Compute_Integers()
+		public void Calculator_CombineHashCode_Integers()
 		{
 			// arrange
 			var calculator = new Calculator();
 
 			// act
-			var result = calculator.Compute(1, 1);
+			var result = calculator.CombineHashCode(1, 1);
 
 			// assert
 			Assert.AreEqual(2, result);
 		}
 
 		[TestMethod]
-		public void Calculator_Compute_Null()
+		public void Calculator_CombineHashCode_Null()
 		{
 			// arrange
 			var calculator = new Calculator();
 
 			// act
-			var result = calculator.Compute(1, null);
+			var result = calculator.CombineHashCode(1, null);
 
 			// assert
 			Assert.AreEqual(2, result);
